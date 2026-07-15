@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Curso intensivo de Geografía turística con lecciones, fichas y simulacros.">
+  <link rel="icon" href="data:,">
+  <title>Geografía | Modo aprobar</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">G</span>
+        <div><strong>Geografía</strong><small>Modo aprobar</small></div>
+      </div>
+      <nav class="main-nav" aria-label="Curso">
+        <button class="nav-item active" data-view="inicio"><span>01</span>Inicio</button>
+        <button class="nav-item" data-view="ruta"><span>02</span>Ruta de estudio</button>
+        <button class="nav-item" data-view="lecciones"><span>03</span>Lo infaltable</button>
+        <button class="nav-item" data-view="fichas"><span>04</span>Fichas rápidas</button>
+        <button class="nav-item" data-view="practica"><span>05</span>Práctica guiada</button>
+        <button class="nav-item" data-view="simulacros"><span>06</span>Simulacros</button>
+        <button class="nav-item" data-view="errores"><span>07</span>Mis errores</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="goal-label"><span>Objetivo</span><strong>aprobar</strong></div>
+        <div class="mini-progress"><i id="side-progress"></i></div>
+        <small id="side-progress-label">0% del recorrido</small>
+        <button class="reset-progress" data-reset-progress>Borrar mi progreso</button>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menu-button" aria-label="Abrir menú" title="Abrir menú">☰</button>
+        <div class="topbar-title"><span id="view-eyebrow">CURSO INTENSIVO</span><strong id="view-title">Inicio</strong></div>
+        <div class="topbar-actions">
+          <span class="status-dot"><i></i><span>Progreso guardado</span></span>
+          <button class="icon-button" id="theme-button" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
+        </div>
+      </header>
+      <main id="content" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <dialog id="course-dialog"><button class="dialog-close" data-close-dialog aria-label="Cerrar">×</button><div id="dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="material-data.js?v=1"></script>
+  <script src="course-data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
